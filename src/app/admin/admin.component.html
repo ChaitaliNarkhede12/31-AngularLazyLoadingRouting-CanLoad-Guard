@@ -1,0 +1,17 @@
+<div class="col-md-12">
+  <div class="row headerDiv">
+    <h3 class="headerTitle">Angular Incubation</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-2 menu">
+      <ul>
+        <li><a [routerLink]="['employee']">Employee</a></li>
+        <li><a [routerLink]="['department']">Department</a></li>
+        <li><a [routerLink]="['certification']">Certification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-9 outletClass">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

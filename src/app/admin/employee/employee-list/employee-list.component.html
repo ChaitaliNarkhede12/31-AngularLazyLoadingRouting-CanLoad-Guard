@@ -1,0 +1,23 @@
+<div style="margin: 10px;">
+
+  <h4>Employee List</h4>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of employeeList">
+        <td> {{item.name}}</td>
+        <td> {{item.salary}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="getDetails(item)">Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
